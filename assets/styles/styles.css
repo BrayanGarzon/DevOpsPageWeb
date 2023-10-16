@@ -58,21 +58,75 @@ section .nav{
 
 section .containerHeader .contTextImage{
     margin: var(--margin-header);
-    height: calc(100vh - 80px);
+    height: calc(100vh - 160px);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
 }
-section .containerHeader .contTextImage .text, .imagen{
+section .containerHeader .contTextImage .text{
     width: 50%;
     height: 100%;
-    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.text h4{
+    font-size: 40px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.text h2{
+    font-size: 90px;
+    font-weight: 700;
+    text-transform: capitalize;
+    line-height: 100px;
+    margin: 20px 0px 20px 0px;
+}
+.text h3{
+    font-size: 20px;
+    font-weight: 200;
+    text-transform: capitalize;
+}
+section .containerHeader .contTextImage .imagen{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+section .containerHeader .contTextImage .imagen img{
+    width: 480px;
     
 }
 
+section .containerHeader .reloj{
+    width: 100%;
+    height: 90px;   
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+section .containerHeader .reloj .date{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+section .containerHeader .reloj .countdown-container{
+    display: flex;
+    gap: 20px;
+}
 
-
+.countdown-container > div {
+    text-align: center;
+}
 
 
 
