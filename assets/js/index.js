@@ -106,3 +106,16 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
   
+
+
+
+//GET YEAR FOR THE FOOTER 
+
+// Obtén el elemento donde mostrarás el año actual
+var currentYearElement = document.getElementById("currentYear");
+
+// Obtén el año actual
+var currentYear = new Date().getFullYear();
+
+// Asigna el año actual al elemento
+currentYearElement.textContent = currentYear;
