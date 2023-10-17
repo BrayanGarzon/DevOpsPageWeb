@@ -10,11 +10,14 @@ body{
 
 :root{
     --color-text: #1F2148;
+    --color-bg1: #F0F8FF;
+    --color-aqua: #2FDBB3;
     
 
 
     --margin-header: 0px 100px;
     --margin-default: 0px 150px;
+    --margin-top-separados-sections: 50px;
 
 
 }
@@ -118,35 +121,177 @@ section .containerHeader .reloj .date{
     justify-content: center;
     align-items: center;
     gap: 100px;
+    
 }
 section .containerHeader .reloj .countdown-container{
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 20px;
 }
 
 .countdown-container > div {
     text-align: center;
+    
 }
 
 
 
+/*FINAL DEL HEADER*/
 
+
+/*INICIO ABOUT DEVOPS*/
 section .sobreDevOps{
-    background: white;
-    height: 300px;
+    
+    height: auto;
     width: 100%;
-   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: var(--margin-top-separados-sections);
+    
+}
+section .sobreDevOps .containerInterno{
+    margin: var(--margin-default);
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-section .sobreDevOps .p{
-    margin: var(--margin-default);
+section .sobreDevOps .containerInterno .imagenBienvenida{
+    width: 50%;
+    height: 100%;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section .sobreDevOps .containerInterno .imagenBienvenida img{
+    width: 100%;
 }
 
-p{
+section .sobreDevOps .containerInterno .parrafo{
+    width: 50%;
+    height: 100%;
+}
+section .sobreDevOps .containerInterno .parrafo h2{
+    color: var(--color-text);
+    padding: 30px 0px 0px 30px;
     margin: 0;
-    padding: 0;
+    font-size: 48px;
+}
+
+section .sobreDevOps .containerInterno .parrafo p{
+    color: var(--color-text);
+    padding: 30px;
+    margin: 0;
     text-align: justify;
 }
+
+/*FINAL ABOUT DEVOPS*/
+
+
+
+
+/*INICIO TEMATICS*/
+
+section .tematicas{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-bg1);
+}
+
+section .tematicas .containerTematicas{
+    margin: var(--margin-default);
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: var(--margin-top-separados-sections);
+    
+}
+section .tematicas .containerTematicas .containerCards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* Espacio entre las tarjetas */
+}
+
+section .tematicas .containerTematicas .h2Tematicas{
+    font-size: 48px;
+    color: var(--color-aqua);
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+  
+
+  .card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    display: inline-block;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.card-content {
+    padding: 10px;
+}
+
+.card h2 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.card p {
+    font-size: 14px;
+}
+
+/*FINAL TEMATICS*/
+
+
+
+
+
+
+
+
+/*BUTTON SCROLL-UP*/
+
+#scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+    background: rgb(202,236,152);
+    background: linear-gradient(90deg, rgba(202,236,152,1) 0%, rgba(187,233,161,1) 16%, rgba(140,224,188,1) 41%, rgba(102,221,194,1) 77%, rgba(225,226,226,1) 96%);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 20px;
+}
+  
