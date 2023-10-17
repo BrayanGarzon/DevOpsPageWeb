@@ -71,6 +71,16 @@ section .nav{
     transition: all 500ms;
 }
 
+.nav-fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #1F2148;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+
 section .containerHeader .contTextImage{
     margin: var(--margin-header);
     height: calc(100vh - 160px);

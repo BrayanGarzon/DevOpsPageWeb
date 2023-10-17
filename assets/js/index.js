@@ -119,3 +119,27 @@ var currentYear = new Date().getFullYear();
 
 // Asigna el año actual al elemento
 currentYearElement.textContent = currentYear;
+
+
+
+
+
+
+
+
+//EFECT SCROLL NAV
+window.addEventListener("scroll", function() {
+    const navbar = document.querySelector(".nav");
+    const scrollPosition = window.scrollY;
+    const tittle = document.getElementById("tittle"); // Cambio aquí
+
+    if (scrollPosition > 200) {
+        navbar.classList.add("nav-fixed");
+        tittle.style.color = "white";
+    } else {
+        navbar.classList.remove("nav-fixed");
+        tittle.style.color = "#1F2148";
+    }
+});
+
+
