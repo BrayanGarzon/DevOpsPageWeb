@@ -231,7 +231,10 @@ section .tematicas .containerTematicas .h2Tematicas{
     margin: 0;
     padding: 0;
 }
-
+section .tematicas .containerTematicas .pTematicas{
+   text-align: justify;
+   margin-bottom: 30px;
+}
 
 
 
