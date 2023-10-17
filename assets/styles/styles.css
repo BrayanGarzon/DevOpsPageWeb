@@ -299,6 +299,85 @@ section .tematicas .containerTematicas .pTematicas{
 
 
 
+
+
+
+
+
+
+section .Contact{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top: var(--margin-top-separados-sections);
+}
+
+section .Contact .containerContact{
+    width: 100%;
+    height: 100%;
+    margin: var(--margin-default);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    flex-direction: column;
+}
+section .Contact .containerContact .h2Contact{
+    
+    text-align: center;
+    font-size: 48px;
+    margin: 0;
+    padding: 0;
+}
+section .Contact .containerContact .pContact{
+    color: var(--color-text);
+    text-align: center;
+    margin: 20px 50px;
+    font-size: 20px;
+}
+section .Contact .containerContact .redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+section .Contact .containerContact .redes .izqueiraImagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+section .Contact .containerContact .redes .izqueiraImagen img{
+    width: 400px;
+}
+
+section .Contact .containerContact .redes .derechaRedes{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+section .Contact .containerContact .redes .derechaRedes .iconos a{
+   text-decoration: none;
+}
+section .Contact .containerContact .redes .derechaRedes .iconos i{
+    font-size: 40px;
+    margin: 0px 10px;
+    margin-top: 10px;
+    transition: transform 0.3s; 
+    cursor: pointer;
+ }
+ section .Contact .containerContact .redes .derechaRedes .iconos i:hover{
+    transform: scale(1.2);
+ }
+
+
+
+
 /*BUTTON SCROLL-UP*/
 
 #scrollToTopBtn {
