@@ -1,6 +1,6 @@
 # DevOpsDays
 
-![DevOpsDays Logo](enlace-a-tu-logo.png)
+![DevOpsDays Logo](./assets/img/IconHeaderHD.png)
 
 ## Descripción
 DevOpsDays es una página web destinada a proporcionar información sobre eventos y conferencias relacionados con DevOps. Nuestro objetivo es reunir a profesionales, entusiastas y expertos en DevOps para compartir conocimientos, experiencias y mejores prácticas en este campo en constante evolución.
@@ -18,7 +18,7 @@ DevOpsDays es una página web destinada a proporcionar información sobre evento
 - **Contacto:** Ofrece información de contacto para consultas y soporte.
 
 ## Capturas de Pantalla
-![Página de Inicio](enlace-a-la-imagen.png)
+![Página de Inicio](/imgWeb/page.png)
 
 ## Cómo Usar
 1. Clona el repositorio en tu máquina local.
@@ -34,14 +34,11 @@ DevOpsDays es una página web destinada a proporcionar información sobre evento
 6. Abre una solicitud de extracción a este repositorio principal.
 
 ## Autores
-- [Tu Nombre](enlace-a-tu-perfil-de-GitHub) - Desarrollador principal
+- [Brayan Garzón - DevDynasty](https://github.com/BrayanGarzon) - Desarrollador principal
 
 ## Licencia
 Este proyecto se encuentra bajo la Licencia MIT - consulta el archivo [LICENSE](LICENSE) para más detalles.
 
 ## Contacto
-Si tienes alguna pregunta o sugerencia, no dudes en ponerte en contacto con nosotros en [tu-correo-electrónico@example.com].
+Si tienes alguna pregunta o sugerencia, no dudes en ponerte en contacto con nosotros en [Brayan.Garzon.Dev@gmail.com].
 
----
-
-*Nota: Asegúrate de reemplazar los marcadores `[...]` con la información real y los enlaces correspondientes a tu proyecto.*

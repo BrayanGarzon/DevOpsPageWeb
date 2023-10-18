@@ -127,26 +127,26 @@ currentYearElement.textContent = currentYear;
 
 
 
-//EFECT SCROLL NAV
-
-
-
 const navbar = document.querySelector(".nav");
 const links = navbar.querySelectorAll("a");
+const tittle = document.getElementById("tittle"); // Asumiendo que "tittle" es el ID de tu elemento
 
 window.addEventListener("scroll", function() {
     const scrollPosition = window.scrollY;
+    const windowWidth = window.innerWidth;
 
-    if (scrollPosition > 200) {
-        navbar.classList.add("nav-fixed");
-        tittle.style.color = "white";
-        
-    } else {
-        navbar.classList.remove("nav-fixed");
-        tittle.style.color = "#1F2148";
-        
+    if (windowWidth > 767) {
+        if (scrollPosition > 200) {
+            navbar.classList.add("nav-fixed");
+            tittle.style.color = "white";
+        } else {
+            navbar.classList.remove("nav-fixed");
+            tittle.style.color = "#1F2148";
+        }
     }
 });
+
+
 
 
 

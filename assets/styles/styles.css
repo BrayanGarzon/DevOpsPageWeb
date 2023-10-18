@@ -20,6 +20,10 @@ body{
     --margin-default: 0px 150px;
     --margin-top-separados-sections: 50px;
 
+    --margin-pantalla-phone: 0px 10px;
+    --paddin-p-pantallas-phone: 30px;
+
+    --marign-pantalla-tablet: 0px 30px;
 
 }
 
@@ -331,6 +335,8 @@ section .tematicas .containerTematicas .pTematicas{
 
 
 
+/*SECCION CONTACT*/
+
 section .Contact{
     width: 100%;
     height: auto;
@@ -358,12 +364,7 @@ section .Contact .containerContact .h2Contact{
     margin: 0;
     padding: 0;
 }
-section .Contact .containerContact .pContact{
-    color: var(--color-text);
-    text-align: center;
-    margin: 20px 50px;
-    font-size: 20px;
-}
+
 section .Contact .containerContact .redes{
     display: flex;
     justify-content: center;
@@ -387,6 +388,12 @@ section .Contact .containerContact .redes .derechaRedes{
     align-items: center;
     flex-direction: column;
 }
+section .Contact .containerContact .pContact{
+    color: var(--color-text);
+    text-align: center;
+    margin: 20px 50px;
+    font-size: 20px;
+}
 section .Contact .containerContact .redes .derechaRedes .iconos a{
    text-decoration: none;
 }
@@ -400,6 +407,10 @@ section .Contact .containerContact .redes .derechaRedes .iconos i{
  section .Contact .containerContact .redes .derechaRedes .iconos i:hover{
     transform: scale(1.2);
  }
+/*FINAL CONTACT*/
+
+
+
 
 
 
@@ -449,3 +460,313 @@ footer a:hover{
     color: white;
     transition: all 500ms;
 }
+
+
+section .nav .button{
+    display: none;
+}
+
+
+
+
+
+
+
+
+/*===========   CODE RESPONSIVE   ===========*/
+/* Media query para pantallas entre 450px y 767px de ancho */
+
+
+
+@media (min-width: 400px) and (max-width: 767px) {
+
+    section{
+        width: 100%;
+    }
+    section .nav{
+        width: 100%;
+    }
+    section .nav ul{
+        flex-direction: column;
+    }
+
+
+    section .containerHeader .contTextImage{
+       flex-direction: column; 
+       margin: var(--margin-pantalla-phone);
+       height: auto;
+    }
+    section .containerHeader .contTextImage .text{
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        
+     }
+    .text h4{
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 0;
+        
+     }
+     .text h2{
+        font-size: 50px;
+        line-height: 50px;
+        text-align: center;
+        margin: 0;
+     }
+     .text h3{
+        font-size: 20px;
+        text-align: center;
+        margin: 10px;
+     }
+
+
+     section .containerHeader .contTextImage .imagen{
+        width: 100%;
+        height: auto;
+        justify-content: center;
+    }
+    section .containerHeader .contTextImage .imagen img{
+        width: 350px;
+    }
+
+    section .containerHeader .reloj{
+        width: 100%;
+        height: auto;
+        gap: 20px;
+        font-size: 15px;
+        flex-direction: column;
+        margin-top: var(--margin-top-separados-sections);
+    }
+
+
+    /*FINAL DEL HEADER*/
+
+
+
+
+    /*INICIO ABOUT DEVOPS*/
+
+    section .sobreDevOps{
+        flex-direction: column;
+    }
+
+    section .sobreDevOps .containerInterno{
+        margin: var(--margin-pantalla-phone);
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+    section .sobreDevOps .containerInterno .imagenBienvenida{
+        width: 90%;
+        height: auto;
+        padding: var(--margin-pantalla-phone);
+    }
+    section .sobreDevOps .containerInterno .imagenBienvenida img{
+        width: 90%;
+        margin-bottom: 30px;
+    }
+    section .sobreDevOps .containerInterno .parrafo{
+        width: 100%;
+        height: auto;
+    }
+    section .sobreDevOps .containerInterno .parrafo h2{
+        color: var(--color-text);
+        padding: 0;
+        margin: 0;
+        font-size: 48px;
+        text-align: center;
+    }
+    section .sobreDevOps .containerInterno .parrafo p{
+        color: var(--color-text);
+        padding: var(--paddin-p-pantallas-phone);
+        margin: 0;
+        text-align: justify;
+    }
+
+    /*FINAL ABOUT DEVOPS*/
+    
+    
+   /*INICIO TEMATICS*/
+   section .tematicas{
+    width: 100%;
+   }
+   section .tematicas .containerTematicas{
+    margin: var(--margin-pantalla-phone);
+    padding: 15px;
+   }
+    section .tematicas .containerTematicas .containerCards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card{
+        width: 100%;
+    }
+
+    /*FINAL TEMATICS*/
+
+
+    /*SECCION CONTACT*/
+
+    section .Contact{
+        width: 100%;
+    }
+    section .Contact .containerContact{
+        width: 100%;
+        height: auto;
+        margin: var(--margin-pantalla-phone);
+    }
+    section .Contact .containerContact .h2Contact{
+        font-size: 30px;
+    }
+    section .Contact .containerContact .redes{
+        flex-direction: column;
+        margin: var(--margin-pantalla-phone);
+    }
+    section .Contact .containerContact .redes .izqueiraImagen{
+        width: 100%;
+    }
+    section .Contact .containerContact .redes .izqueiraImagen img{
+        width: 90%;
+        margin-top: 30px;
+    }
+    section .Contact .containerContact .redes .derechaRedes{
+        width: 100%;
+    }
+    section .Contact .containerContact .pContact{
+        color: var(--color-text);
+        text-align: center;
+        
+        font-size: 15px;
+        width: 100%;
+        text-align: justify;
+    }
+    section .Contact .containerContact .redes .derechaRedes .iconos i{
+        margin-bottom: 30px;
+     }
+    /*FINAL SECCION CONTACT*/
+
+
+    /*SECCION FOOTER*/
+      section footer{
+        width: 100%;
+        text-align: center;
+      }
+    /* FIN SECCION FOOTER*/
+
+  }
+  
+
+
+
+
+  /* Media query para pantallas entre 450px y 767px de ancho */
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .text h4{
+        
+        margin-bottom: 0px;
+    }
+    .text h2{
+        font-size: 70px;
+        font-weight: 700;
+        text-transform: capitalize;
+        line-height: 90px;
+        
+    }
+    section .containerHeader .contTextImage .imagen img{
+        width: 400px;
+        
+    }
+    /*--==== END SECTION NAV-HEADER ====--*/
+
+
+
+    /*--==== SECTION ABOUT DEVOPS ====--*/
+    section .sobreDevOps .containerInterno{
+        margin: var(--marign-pantalla-tablet);
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    section .sobreDevOps .containerInterno .imagenBienvenida{
+        width: 100%;
+    }
+    section .sobreDevOps .containerInterno .imagenBienvenida img{
+        width: 90%;
+        margin-bottom: 40px;
+    }
+    section .sobreDevOps .containerInterno .parrafo{
+        width: 100%;
+        height: auto;
+    }
+    section .sobreDevOps .containerInterno .parrafo h2{
+        color: var(--color-text);
+        margin: 0;
+        font-size: 48px;
+        text-align: center;
+    }
+    /*--==== END SECTION ABOUT DEVOPS ====--*/
+
+
+
+
+    /*--====  SECTION TEMATICS===--*/
+
+    section .tematicas .containerTematicas{
+        margin: var(--marign-pantalla-tablet);
+        width: 100%;
+        height: auto;
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: var(--margin-top-separados-sections);
+        
+    }
+    section .tematicas .containerTematicas .pTematicas{
+        text-align: justify;
+        margin: var(--marign-pantalla-tablet);
+     }
+    .card {
+        width: 250px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin: 10px;
+        display: inline-block;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    /*--==== END SECTION TEMATICS===--*/
+
+
+
+    /*--==== SECTION CONTACT ===--*/
+    section .Contact .containerContact{
+        width: 100%;
+        height: auto;
+        margin: var(--marign-pantalla-tablet);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px;
+        flex-direction: column;
+    }
+    section .Contact .containerContact .h2Contact{
+    
+        text-align: center;
+        font-size: 35px;
+        margin: 0;
+        padding: 0;
+    }
+    /*--====END SECTION CONTACT ===--*/
+  }
