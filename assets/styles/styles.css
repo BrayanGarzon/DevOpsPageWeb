@@ -12,6 +12,7 @@ body{
     --color-text: #1F2148;
     --color-bg1: #F0F8FF;
     --color-aqua: #2FDBB3;
+    --color-hover-nav: #0181F5;
     
 
 
@@ -57,11 +58,36 @@ section .nav{
     text-decoration: none; 
     color: white; 
     font-weight: bold;
+    position: relative;
 }
 .nav li a:hover{
-    color: var(--color-text);
+    color: var(--color-hover-nav);
     transition: all 500ms;
 }
+.nav li a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px; /* Altura de la línea */
+    background-color: var(--color-hover-nav); /* Color de la línea */
+    bottom: -3px; /* Posición debajo del texto */
+    left: 0;
+    transform: scaleX(0); /* Inicialmente, la línea está oculta */
+    transform-origin: 50% 0; /* Origen de la transformación en la parte superior */
+    transition: transform 0.3s ease; /* Transición de la línea */
+}
+
+/* Efecto al pasar el mouse sobre un enlace */
+.nav li a:hover::after {
+    transform: scaleX(1); /* Mostrar la línea al 100% de su ancho */
+}
+
+
+
+
+
+
+
 .nav .tittleNav{
     cursor: pointer;
     font-size: 35px;

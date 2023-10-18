@@ -128,18 +128,31 @@ currentYearElement.textContent = currentYear;
 
 
 //EFECT SCROLL NAV
+
+
+
+const navbar = document.querySelector(".nav");
+const links = navbar.querySelectorAll("a");
+
 window.addEventListener("scroll", function() {
-    const navbar = document.querySelector(".nav");
     const scrollPosition = window.scrollY;
-    const tittle = document.getElementById("tittle"); // Cambio aquí
 
     if (scrollPosition > 200) {
         navbar.classList.add("nav-fixed");
         tittle.style.color = "white";
+        
     } else {
         navbar.classList.remove("nav-fixed");
         tittle.style.color = "#1F2148";
+        
     }
 });
+
+
+
+
+
+
+
 
 
