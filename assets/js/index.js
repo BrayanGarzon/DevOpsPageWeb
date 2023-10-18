@@ -125,6 +125,7 @@ currentYearElement.textContent = currentYear;
 
 
 
+//EFECT SCROLL NAVBAR
 
 
 const navbar = document.querySelector(".nav");
@@ -144,6 +145,24 @@ window.addEventListener("scroll", function() {
             tittle.style.color = "#1F2148";
         }
     }
+});
+
+
+
+
+
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+const nav = document.querySelector('.nav');
+const navItems = nav.querySelectorAll('a');
+
+hamburgerMenu.addEventListener('click', function() {
+    nav.classList.toggle('active'); // Abre y cierra el menú al hacer clic en el icono
+});
+
+navItems.forEach(item => {
+    item.addEventListener('click', function() {
+        nav.classList.remove('active'); // Cierra el menú al hacer clic en un ítem del menú
+    });
 });
 
 

@@ -479,16 +479,74 @@ section .nav .button{
 
 
 @media (min-width: 400px) and (max-width: 767px) {
+    .nav {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: -70%;
+        height: 100vh;
+         /* Ocupa todo el alto de la pantalla */
+        z-index: 1;
+        overflow: hidden;
+        transition: transform 0.3s ease-in-out;
+        transform: translateX(-100%); /* Oculta el menú fuera de la pantalla */
+        background-color: var(--color-text);
+    }
+
+    .nav.active {
+        transform: translateX(0); /* Muestra el menú desde la parte superior de la pantalla */
+        width: 70%;
+        height: 100vh;
+        font-size: 30px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+
+    .hamburger-menu {
+        cursor: pointer;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        height: 57px;
+    }
+    .hamburger-menu i{
+        font-size: 35px;
+        margin: 10px;
+    }
+    
+
+    
+
+   
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Ocupa todo el alto del menú */
+    }
+
+
+    section .containerHeader .nav .tittleNav{
+        display: none;
+    }
+
+
+    
 
     section{
         width: 100%;
     }
     section .nav{
-        width: 100%;
+        width: 0%;
     }
     section .nav ul{
         flex-direction: column;
     }
+    
 
 
     section .containerHeader .contTextImage{
@@ -663,9 +721,12 @@ section .nav .button{
 
 
 
-  /* Media query para pantallas entre 450px y 767px de ancho */
+  /* Media query para pantallas entre 768px y 1023px de ancho */
 
   @media (min-width: 768px) and (max-width: 1023px) {
+    section .containerHeader .hamburger-menu{
+        display: none;
+    }
     .text h4{
         
         margin-bottom: 0px;
@@ -770,3 +831,12 @@ section .nav .button{
     }
     /*--====END SECTION CONTACT ===--*/
   }
+
+
+
+/*--==== RESPONSIVE PANTALLAS DESKTOP===--*/
+  @media (min-width: 1024px) {
+    section .containerHeader .hamburger-menu{
+        display: none;
+    }
+}
