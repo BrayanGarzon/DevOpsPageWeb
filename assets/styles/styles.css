@@ -474,7 +474,268 @@ section .nav .button{
 
 
 /*===========   CODE RESPONSIVE   ===========*/
-/* Media query para pantallas entre 450px y 767px de ancho */
+/* Media query para pantallas entre 300px y 400px de ancho */
+
+@media (min-width: 300px) and (max-width: 400px) {
+    .nav {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: -70%;
+        height: 100vh;
+         /* Ocupa todo el alto de la pantalla */
+        z-index: 1;
+        overflow: hidden;
+        transition: transform 0.3s ease-in-out;
+        transform: translateX(-100%); /* Oculta el menú fuera de la pantalla */
+        background-color: var(--color-text);
+    }
+
+    .nav.active {
+        transform: translateX(0); /* Muestra el menú desde la parte superior de la pantalla */
+        width: 70%;
+        height: 100vh;
+        font-size: 30px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+
+    .hamburger-menu {
+        cursor: pointer;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        height: 57px;
+    }
+    .hamburger-menu i{
+        font-size: 35px;
+        margin: 10px;
+    }
+    
+
+    
+
+   
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Ocupa todo el alto del menú */
+    }
+
+
+    section .containerHeader .nav .tittleNav{
+        display: none;
+    }
+
+
+    
+
+    section{
+        width: 100%;
+    }
+    section .nav{
+        width: 0%;
+    }
+    section .nav ul{
+        flex-direction: column;
+    }
+    
+
+
+    section .containerHeader .contTextImage{
+       flex-direction: column; 
+       margin: var(--margin-pantalla-phone);
+       height: auto;
+    }
+    section .containerHeader .contTextImage .text{
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        
+     }
+    .text h4{
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 0;
+        
+     }
+     .text h2{
+        font-size: 50px;
+        line-height: 50px;
+        text-align: center;
+        margin: 0;
+     }
+     .text h3{
+        font-size: 20px;
+        text-align: center;
+        margin: 10px;
+     }
+
+
+     section .containerHeader .contTextImage .imagen{
+        width: 100%;
+        height: auto;
+        justify-content: center;
+    }
+    section .containerHeader .contTextImage .imagen img{
+        width: 350px;
+    }
+
+    section .containerHeader .reloj{
+        width: 100%;
+        height: auto;
+        gap: 20px;
+        font-size: 15px;
+        flex-direction: column;
+        margin-top: var(--margin-top-separados-sections);
+    }
+
+
+    /*FINAL DEL HEADER*/
+
+
+
+
+    /*INICIO ABOUT DEVOPS*/
+
+    section .sobreDevOps{
+        flex-direction: column;
+    }
+
+    section .sobreDevOps .containerInterno{
+        margin: var(--margin-pantalla-phone);
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+    section .sobreDevOps .containerInterno .imagenBienvenida{
+        width: 90%;
+        height: auto;
+        padding: var(--margin-pantalla-phone);
+    }
+    section .sobreDevOps .containerInterno .imagenBienvenida img{
+        width: 90%;
+        margin-bottom: 30px;
+    }
+    section .sobreDevOps .containerInterno .parrafo{
+        width: 100%;
+        height: auto;
+    }
+    section .sobreDevOps .containerInterno .parrafo h2{
+        color: var(--color-text);
+        padding: 0;
+        margin: 0;
+        font-size: 48px;
+        text-align: center;
+    }
+    section .sobreDevOps .containerInterno .parrafo p{
+        color: var(--color-text);
+        padding: var(--paddin-p-pantallas-phone);
+        margin: 0;
+        text-align: justify;
+    }
+
+    /*FINAL ABOUT DEVOPS*/
+    
+    
+   /*INICIO TEMATICS*/
+   section .tematicas{
+    width: 100%;
+   }
+   section .tematicas .containerTematicas{
+    margin: var(--margin-pantalla-phone);
+    padding: 15px;
+   }
+    section .tematicas .containerTematicas .containerCards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card{
+        width: 100%;
+    }
+
+    /*FINAL TEMATICS*/
+
+
+    /*SECCION CONTACT*/
+
+    section .Contact{
+        width: 100%;
+    }
+    section .Contact .containerContact{
+        width: 100%;
+        height: auto;
+        margin: var(--margin-pantalla-phone);
+    }
+    section .Contact .containerContact .h2Contact{
+        font-size: 30px;
+    }
+    section .Contact .containerContact .redes{
+        flex-direction: column;
+        margin: var(--margin-pantalla-phone);
+    }
+    section .Contact .containerContact .redes .izqueiraImagen{
+        width: 100%;
+    }
+    section .Contact .containerContact .redes .izqueiraImagen img{
+        width: 90%;
+        margin-top: 30px;
+    }
+    section .Contact .containerContact .redes .derechaRedes{
+        width: 100%;
+    }
+    section .Contact .containerContact .pContact{
+        color: var(--color-text);
+        text-align: center;
+        
+        font-size: 15px;
+        width: 100%;
+        text-align: justify;
+    }
+    section .Contact .containerContact .redes .derechaRedes .iconos i{
+        margin-bottom: 30px;
+     }
+    /*FINAL SECCION CONTACT*/
+
+
+    /*SECCION FOOTER*/
+      section footer{
+        width: 100%;
+        text-align: center;
+      }
+    /* FIN SECCION FOOTER*/
+
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
