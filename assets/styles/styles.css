@@ -95,9 +95,13 @@ section .nav{
 .nav .tittleNav{
     cursor: pointer;
     font-size: 35px;
-}
-.nav .tittleNav:hover{
     color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+    
+}
+
+.nav .tittleNav:hover{
+    color: #0181F5;
     transition: all 500ms;
 }
 
@@ -1100,4 +1104,5 @@ section .nav .button{
     section .containerHeader .hamburger-menu{
         display: none;
     }
+    
 }
