@@ -1,4 +1,5 @@
 {
-    "DevOpsPageWeb": "<h1>Descripción personalizada con una imagen:</h1><img src='/imgWeb/page.png' alt='' />"
+    "name": "DevOpsPageWeb",
+    "description": "this proyect is a page for events in the city Villavicencio in Colombia"
   }
   
