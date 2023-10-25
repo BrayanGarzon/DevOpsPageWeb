@@ -1,6 +1,6 @@
 {
     "name": "DevOpsPageWeb",
-    "description": "this proyect is a page for events in the city Villavicencio in Colombia",
+    "description": "DevOpsDays es una página web destinada a proporcionar información sobre eventos y conferencias relacionados con DevOps. Nuestro objetivo es reunir a profesionales, entusiastas y expertos en DevOps para compartir conocimientos, experiencias y mejores prácticas en este campo en constante evolución.",
     "image": "https://github.com/BrayanGarzon/DevOpsPageWeb/blob/main/imgWeb/page.png?raw=true",
     "frameworks": ["JavaScript", "Html", "CSS"],
     "url_repo": "https://github.com/BrayanGarzon/DevOpsPageWeb.git",
