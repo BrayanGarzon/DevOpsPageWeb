@@ -4,6 +4,7 @@
     "image": "https://github.com/BrayanGarzon/DevOpsPageWeb/blob/main/imgWeb/imagenURL.png?raw=true",
     "frameworks": ["JavaScript", "Html", "CSS"],
     "url_repo": "https://github.com/BrayanGarzon/DevOpsPageWeb.git",
+    "url_live": "https://dev-ops-page-web.vercel.app/",
     "fecha": "25/10/2023"
   }
   
